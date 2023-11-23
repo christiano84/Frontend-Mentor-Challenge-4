@@ -6,6 +6,6 @@ function showMenu() {
 
 function hideMenu() {
   var nav = document.getElementById("navMenu")
-  nav.style.right = '-100%'
+  nav.style.right = '-300px'
   nav.classList.remove('dimmer')
 }
