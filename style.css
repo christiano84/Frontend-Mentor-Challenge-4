@@ -14,9 +14,10 @@
 body {
   font-family: Inter, sans-serif;
   margin: 80px auto;
+  
   background-color: #fefdf9;
-  width: 1110px;
   display: grid;
+  max-width: 1225px;
 }
 
 /* ---- Header ---- */
@@ -67,11 +68,11 @@ main {
 }
 
 .box-left {
-  flex-basis: 728px;
+  flex-basis: 65.5%;
 }
 
 .box-right {
-  flex-basis: 350px;
+  flex-basis: 31.5%;
 }
 
 .img-container {
@@ -100,7 +101,7 @@ main {
 }
 
 .mini-row__col1 h1 {
-  font-size: 56px;
+  font-size: clamp(2rem, 1rem + 10vw, 4rem);
   font-weight: 800;
   line-height: 56px;
 }
@@ -131,7 +132,7 @@ main {
 .box-right {
   background-color: hsl(240, 100%, 5%);
   color: hsl(233, 8%, 79%);
-  padding: 25px 2.2%;
+  padding: 24px 24px;
 }
 
 .box-right h2 {
@@ -143,6 +144,7 @@ main {
 .article-heading {
   color: #fff;
   font-size: 19px;
+  font-weight: 800;
   margin-bottom: 12px;
 }
 
@@ -219,6 +221,20 @@ main {
   margin-top: 100px;
 }
 
+/* ---- Media Queries ---- */
+
+@media (orientation: landscape) and (max-height: 500px) {
+  header nav ul {
+    margin-top: 10px;
+  }
+}
+
+@media (min-width: 1201px) and (max-width: 1380px) {
+  body {
+    margin: 80px 5%;
+  }
+}
+
 @media (max-width: 1200px) {
   nav {
     position: fixed;
@@ -244,7 +260,7 @@ main {
     display: block;
     cursor: pointer;
   }
-  
+
   /* The X icon */
   nav > svg {
     margin-left: auto;
@@ -254,7 +270,7 @@ main {
 
   body {
     width: initial;
-    margin: 30px 1.5%;
+    margin: 30px 2.3%;
   }
   .dimmer {
     box-shadow: 0 0 0 3000px rgba(3, 2, 13, 0.5);
@@ -268,6 +284,7 @@ main {
   }
   .mini-row__col1 h1 {
     margin-bottom: 15px;  
+    font-size: 2.5rem;
   }
   .mini-row__col2 p {
     line-height: 26px;
@@ -292,6 +309,6 @@ main {
   }
   .box-left {
     flex-basis: initial;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
   }
 }
