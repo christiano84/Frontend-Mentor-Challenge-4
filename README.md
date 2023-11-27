@@ -2,6 +2,10 @@ VIEW THE LIVE SITE HERE
 
 https://christiano84.github.io/Frontend-Mentor-Challenge-4/
 
+CHALLENGE SPEC
+
+https://www.frontendmentor.io/challenges/news-homepage-H6SWTa1MFl
+
 # Frontend Mentor - News homepage
 
 ![Design preview for the News homepage coding challenge](./design/desktop-preview.jpg)
